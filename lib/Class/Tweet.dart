@@ -150,3 +150,46 @@ var Tweets = [
 
 
 ];
+
+
+var Tweets_Page2 = [
+  Tweet(
+      '@Faen_Page2',
+      name: 'Fannie Obrien',
+      time: DateTime.utc(2021,4,24,16,30,0),
+      text: 'Replace The Negatives In Your Life With Positives And Move Your Life Ahead',
+      Comments: 21,
+      like: 721,
+      retweet: 2,
+      image: null,
+      avatar: 'assets/images/1.jpg'
+
+  ),
+  Tweet(
+      '@Julns_Page2',
+      name: 'Julian Owens',
+      time: DateTime.utc(2021,4,24,10,30,0),
+      text: 'Cleaning And Organizing Your Computer',
+      Comments: 4782,
+      like: 1203,
+      retweet: 500,
+      image: null,
+      avatar: 'assets/images/10.jpg'
+
+  ),
+  Tweet(
+      '@Fannien_Page2',
+      name: 'Fannrien',
+      time: DateTime.utc(2021,4,24,16,30,0),
+      text: 'Replace The Negatives In Your Life With Positives And Move Your Life Ahead',
+      Comments: 21,
+      like: 721,
+      retweet: 2,
+      image: 'assets/images/13.jpg',
+      views: '37.7K',
+      avatar: 'assets/images/2.jpg'
+
+  ),
+
+
+];

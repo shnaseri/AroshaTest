@@ -8,6 +8,8 @@ import 'package:aroshatest/Class/Tweet.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:toast/toast.dart';
 
+import 'DescriptionWidget.dart';
+
 Widget tiletweet(BuildContext context, int index,List<Tweet> tweets,setState) {
   void Toastshower(msg){
     Toast.show(msg,context,duration: Toast.LENGTH_LONG,gravity: Toast.BOTTOM);
@@ -72,23 +74,24 @@ Widget tiletweet(BuildContext context, int index,List<Tweet> tweets,setState) {
 
             ),
             new SizedBox(height: 5,),
-            AutoSizeText(tweets[index].text,
-              style: TextStyle(color: Colors.black, fontSize: Theme
-                  .of(context)
-                  .textTheme
-                  .overline
-                  .fontSize * 1.5, fontWeight: FontWeight.w400,fontFamily: 'MalikTrial'),
-              maxLines: 2,
-              maxFontSize: Theme
-                  .of(context)
-                  .textTheme
-                  .overline
-                  .fontSize * 1.5,
-              minFontSize: Theme
-                  .of(context)
-                  .textTheme
-                  .overline
-                  .fontSize * 1.5,),
+            DescriptionTextWidget(text : tweets[index].text),
+            // AutoSizeText(tweets[index].text,
+            //   style: TextStyle(color: Colors.black, fontSize: Theme
+            //       .of(context)
+            //       .textTheme
+            //       .overline
+            //       .fontSize * 1.5, fontWeight: FontWeight.w400,fontFamily: 'MalikTrial'),
+            //   maxLines: 2,
+            //   maxFontSize: Theme
+            //       .of(context)
+            //       .textTheme
+            //       .overline
+            //       .fontSize * 1.5,
+            //   minFontSize: Theme
+            //       .of(context)
+            //       .textTheme
+            //       .overline
+            //       .fontSize * 1.5,),
             new SizedBox(height: 5,),
             Text(timeago.format(tweets[index].time),
               style: TextStyle(color: Colors.grey, fontSize: Theme
